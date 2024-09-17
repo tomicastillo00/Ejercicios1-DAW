@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>Formulario de datos de alumnos</head>
+    <body>
+        <form action="datosAlumnos.php" method="post">
+            Ingrese nombre:
+            <input type="text" name="nombre" required>
+            <br>
+            Ingrese primer apellido:
+            <input type="text" name="apellido1" required>
+            <br>
+            Ingrese segundo apellido:
+            <input type="text" name="apellido2" required>
+            <br>
+            Ingrese NIF:
+            <input type="text" name="NIF" required pattern="[0-9]{8}[A-Z]{1}">
+            <br>
+            Introduzca fecha de nacimiento:
+            <input type="date" name="fechaNacimiento" required>
+            <br>
+            Introduce email:
+            <input type="text" name="email" required>
+            <br>
+            Introduce localidad
+            <input type="text" name="localidad" required>
+            <br>
+            Introduce tu sexo:
+            <!--<select name="sexo" required> 
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+                <option value="3">Indefinido</option>
+            </select>-->
+            <br>
+            <input type="radio" value="1" name="sexo">
+            <label>Hombre</label>
+            <br>
+            <input type="radio" value="2" name="sexo">
+            <label>Mujer</label>
+            <br>
+            <input type="radio" value="3" name="sexo">
+            <label>Indefinido</label>
+            <br>
+            Introduce la cuenta de twitter:
+            <input type="text" name="cuenta_twitter">
+            <br>
+            <input type="submit" value="Registrar">
+        </form>
+        <br>
+        <div>
+        <form action="datosAlumno1.php" method="post">
+           
+            Ingrese primer apellido:
+            <input type="text" name="apellido1" required>
+            <br>
+            
+            <br>
+            
+            <input type="submit" value="Mostrar alumnos">
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALTA ALUMNOS</h1>
+    <form action="AlumnoAgregado.php" method="post"><br>
+        *Ingrese el nombre:
+        <input type="text" name="Nombre"
+        pattern="^([A-Z]{1}[a-z]+[ ]?){1,2}$" required><br><br>
+        *Ingrese el primer apellido:
+        <input type="text" name="Apellido1" required><br><br>
+        *Ingrese el segundo apellido:
+        <input type="text" name="Apellido2" required><br><br>
+        *Ingrese el NIF:
+        <input type="text" name="NIF"
+        pattern="^[0-9]{8}[T|R|W|A|G|M|Y|F|P|D|X|B|N|J|Z|S|Q|V|H|L|C|K|E]$" required><br><br>
+        *Ingrese la fecha de nacimiento:
+        <input type="date" name="Fecha_Nacimiento" required><br><br>
+        *Ingrese el email:
+        <input type="email" name="Email"
+        pattern="^([\\w-]+\\.)*?[\\w-]+@[\\w-]+\\.([\\w-]+\\.)*?[\\w]+$" required><br><br>
+        Ingrese la localidad:
+        <input type="text" name="Localidad"><br><br>
+        *Seleccione el sexo:
+        <select name="Sexo" required>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+          <option value="2">Otro</option> 
+        </select>
+        <br><br>
+        Ingrese el nombre de usuario de Twitter
+        <input type="text" name="Cuenta_Twitter"
+        pattern="^@([A-Za-z0-9_]{1,15})$" required><br><br>
+        (*) Obligatorio <br><br>
+        <input type="submit" value="Registrar">
+      </form>
+</body>
+</html>

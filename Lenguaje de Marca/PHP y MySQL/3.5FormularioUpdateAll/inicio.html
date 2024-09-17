@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+
+<style>
+  div{
+    float: left;
+    margin: 5px;
+  }
+  span{
+    float: right;
+    margin: 5px;
+  }
+</style>
+
+<body>
+  <span>
+  <form action="busqueda.php" method="post">
+    Ingrese el nombre del alumno:
+    <input type="text" name="nombre"><br>
+    <input type="submit" value="buscar">
+  </form>
+</span>
+
+<div>
+  <form action="alumnosAgregar.php" method="post">
+    Agregar alumno:
+    <br>
+    Nombre:
+    <input type="text" name="nombre" required>
+    <br>
+    Primer apellido:
+    <input type="text" name="apellido1" required>
+    <br>
+    Segundo apellido:
+    <input type="text" name="apellido2" required>
+    <br>
+    Introduce tu NIF:
+    <input type="text" pattern='[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]{1}$' name="NIF" required>
+    <br>
+    Introduce tu fecha de nacimiento:
+    <input type="date" name="fechaNacimiento" required>
+    <br>
+    Introduce tu email
+    <input type="text" name="email" required>
+    <br>
+    Introduce tu localidad:
+    <input type="text" name="localidad">
+    <br>
+    Introduce tu sexo:
+    <select name="sexo" required> 
+      <option value="0">Hombre</option>
+      <option value="1">Mujer</option>
+      <option value="2">Indefinido</option>
+  </select>
+  <br>
+    Introduce tu cuenta de Twitter:
+    <input type="text" name="cuenta_twitter" required>
+    <input type="submit" name="Agregar" value="Agregar alumno">
+  </form>
+</div>
+</body>
+
+</html>
