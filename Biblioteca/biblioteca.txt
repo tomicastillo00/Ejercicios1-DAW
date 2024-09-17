@@ -1,0 +1,5 @@
+978-84-95501-55-4;El maestro de esgrima;Arturo Perez Reverte;Alfaguara;null;20.3;false
+978-84-666-7121-7;Matar al Rey;Jose Luis Corral;Ediciones B;null;27.5;false
+978-84-16087-34-1;Las llanuras del transito;J.M. Auel;Maeva;null;20.0;false
+978-84-18949-13-5;Antes de diciembre;Joana Marcus;Montena;null;17.05;false
+978-84-86478-01-8;El clan del oso cavernario;J.M. Auel;Maeva;null;23.05;false
