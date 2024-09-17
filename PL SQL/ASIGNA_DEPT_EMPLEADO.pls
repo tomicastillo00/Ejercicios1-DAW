@@ -1,0 +1,37 @@
+create or replace NONEDITIONABLE PROCEDURE ASIGNA_DEPT_EMPLEADO (P_NOMBRE_EMPLEADO EMPLOYEES.FIRST_NAME%TYPE, P_NOMBRE_DEPT DEPARTMENTS.DEPARTMENT_NAME%TYPE)AS 
+V_EMPLEADO EMPLOYEES.EMPLOYEE_ID%TYPE;
+V_DEPT DEPARTMENTS.DEPARTMENT_ID%TYPE;
+V_CUANTOS NUMBER;
+
+BEGIN
+
+begin
+    SELECT employee_id
+    INTO V_EMPLEADO
+    FROM EMPLOYEES
+    WHERE FIRST_NAME=p_nombre_empleado;
+EXCEPTION 
+    WHEN NO_DATA_FOUND THEN 
+    DBMS_OUTPUT.PUT_LINE('El empleado no existe');
+    WHEN TOO_MANY_ROWS THEN
+        SELECT COUNT(*)
+        INTO V_CUANTOS
+        FROM employees
+        WHERE FIRST_NAME=p_nombre_empleado;
+    DBMS_OUTPUT.PUT_LINE('Hay '||v_cuantos||' empleados con el nombre' ||p_nombre_empleado);
+end;
+
+begin
+    SELECT department_id
+    INTO V_DEPT
+    FROM DEPARTMENTS
+    WHERE department_name=p_nombre_dept;
+end;
+ 
+ 
+UPDATE EMPLOYEES
+SET DEPARTMENT_ID=V_DEPT
+WHERE employee_id=v_empleado;
+
+  
+END ASIGNA_DEPT_EMPLEADO;
