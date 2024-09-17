@@ -1,0 +1,10 @@
+978-84-663-2914-9,El Capitan Alatriste,Arturo Perez Reverte,Alfaguara,2022-03-16,20.5,true
+978-84-95501-55-4,El maestro de esgrima,Arturo Perez Reverte,Alfaguara,null,20.3,false
+978-84-322-3637-2,El quijote,Cervantes,Alfaguara,2022-02-15,12.5,true
+978-84-666-7121-7,Matar al Rey,Jose Luis Corral,Ediciones B,null,27.5,false
+978-84-16087-34-1,Las llanuras del transito,J.M. Auel,Maeva,null,20.0,false
+978-84-204-5191-6,A traves de mi ventana, Ariana Godoy,Alfaguara,2022-03-20,18.0,true
+978-84-18949-13-5,Antes de diciembre,Joana Marcus,Montena,null,17.05,false
+978-84-663-2918-7,El Caballero del Jubon Amarillo,Arturo Perez Reverte,Alfaguara,2022-03-18,18.0,true
+978-84-670-6221-2,Encuentra tu persona vitamina,Maria de la O,Espasa,2022-03-14,18.9,true
+978-84-86478-01-8,El clan del oso cavernario,J.M. Auel,Maeva,null,23.05,false
