@@ -1,0 +1,6 @@
+Pepe;Ana;Carlos
+Mates;Ingles;Geografia;Fisica
+5;6;7
+8;5;6
+6;7;9
+7;5;9
